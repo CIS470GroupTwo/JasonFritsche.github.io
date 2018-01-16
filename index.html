@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Jason's Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="pagestyle" rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"> 
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    $(".bgText").fadeIn(8000);
+                   });
+                $(function(){
+                    $("#aboutPic,#schoolPic").draggable();
+                  });
+            </script>
+            <header>
+                <div id="navbar">
+                    <ul id="navtable">
+                        <li><a href="#navbar">HOME</a></li>
+                        <li><a href="#aboutText">ABOUT ME</a></li>
+                        <li><a href="#schoolPic">EDUCATION</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+
+                </div>
+            </header>
+            <div id="sbg">
+                <div id="sbgText">
+                    <span class="bgText">
+                        Hello! I'm Jason <br/>Welcome to my profile<br/>
+                        Thanks for stopping by</span>
+                </div>
+
+            </div>
+           
+            
+             
+            <div class="grid">
+                <div id="aboutText">
+                    <h1 class='hText'>About Me</h1>
+                    <p class='pText'>Hello, my name is Jason Fritsche. I am a student, veteran, and
+                     father. I was born and raised in Conroe, Texas. When I was 19 I decided 
+                     to join the Air Force. I'm so glad now because I have my GI Bill and 
+                     am able to use that to attend school. I served for seven years in the US Air Force. I was 
+                    fortunate to have a couple of amazing assignments. I spent my first
+                    three years at Ramstein Air Base, Germany. If that wasn't awesome enough
+                    , I spent the following three years assigned to Aviano Air Base, Italy.
+                    I spent my last year in the Air Force at Little Rock Air Force Base,
+                    Arkansas. While in Little Rock I decided it was time to separate from
+                    Air Force and move back to Texas. I enjoyed my time serving our country
+                     but am glad I decided to get a taste of civilian life.
+                     Since I've been out I started going to school full time at DeVry University.</p>
+                </div>
+
+                <div id="aboutPic" class="ui-widget-content">
+                    <img src="images/af1.jpg" alt="Me being awesome" width="500" height="460"> 
+                </div>
+             </div>
+             <div class="grid">   
+                <div id="schoolPic" class="ui-widget-content">
+                    <img src="images/devry.png" alt="DeVry Logo" width="350" height="350">
+                </div>
+
+                <div>
+                    <h1 class='hText'>School</h1>
+                    <p class='pText'>I am currently a Junior at DeVry University. In 
+                        my free time I am working on relevant courses on Udemy.com.
+                    </p>
+                    <ul class='pText'>
+                        <li>3.68 GPA </li>
+                        <li>Junior</li>
+                        <li>Computer Information Systems Major</li>
+                        <li>Concentration in Web Development & Administration</li>
+
+                    </ul>
+                </div>
+            </div> 
+            <div class="grid2">
+                <div id="projects">
+                    <h1 class='hText'>Projects</h1>
+                    <p>Please take a moment to view my two projects. Both use
+                        HTML, CSS, and JavaScript. Please also check out my GitHub
+                        where I will continue to post projects as I continue
+                        to learn.
+                </div>
+                <div id="catClicker">
+                    <h2 class='pText'>  Cat Clicker</h2>
+                    <a href= "http://catclicker2018-com.stackstaging.com/" target="_blank">
+                        <img src="images/catclicker.png" alt="CatClicker" width="300" height="300"></a>
+               </div>
+                <div id="horoscope">
+                    <h2 class='pText'>Horoscope</h2>
+                    <a href= "http://truehoroscope2018-com.stackstaging.com/" target="_blank">
+                        <img src="images/horoscope.png" alt="Horoscope" width="300" height="300"></a>
+                </div>
+                <div id="contact">
+                    <h1 class='hText'>Contact</h1>
+                    <ul>
+                        <li><img src="images/gmail.png" height="20" width="20">
+                            <a href="mailto:fritsche.jason@gmail.com">
+                            Fritsche.Jason@gmail.com
+                            </a></li>
+                            <li><img src="images/github.png" width="20" height="20">
+                                <a href="https://github.com/JasonFritsche" target="_blank">
+                                GitHub
+                            </a></li>
+                            <li><img src="images/linkedin.png" width="20" height="20">
+                                <a href="https://www.linkedin.com/in/jason-fritsche-b260a255/" 
+                               target="_blank">Indeed</a></li>
+                                
+                    </ul>
+                </div>
+            
+            </div>
+                
+    
+    </body>
+</html>
