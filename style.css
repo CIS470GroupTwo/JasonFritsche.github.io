@@ -8,8 +8,29 @@ body{
 }
 
 #topText{
-  font-family: 'Handlee', cursive;;
-  color:#f4bf7a;
+  font-family: 'Permanent Marker', cursive;
+  -webkit-animation-name: topTextAnimation;
+  -webkit-animation-duration: 6s;
+  animation-name: topTextAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: 50;
+  font-size: 1.3em;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes topTextAnimation {
+    0%   {color: #ed9e00;}
+    25%  {color: #ffc518;}
+    50%  {color: #ffdc18;}
+    100% {color: #ed9e00;}
+}
+
+/* Standard syntax */
+@keyframes topTextAnimation {
+  0%   {color: #ed9e00;}
+  25%  {color: #ffc518;}
+  50%  {color: #ffdc18;}
+  100% {color: #ed9e00;}
 }
 
 #topImage {
