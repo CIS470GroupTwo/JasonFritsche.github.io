@@ -1,218 +1,341 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link id="pagestyle" rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Share|Audiowide" rel="stylesheet">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <title>Jason's Profile</title>
+    <style type="text/css">
+       body, html {height: 100%}
+
+       #particles-js canvas {
+         width: 100%;
+         height: 100%;
+      }
+
+       #particles-js {
+         background-color: #ffffff;
+         position: fixed;
+        width: 100% !important;
+        height: 100% !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        opacity: 0.85;
+       }
+
+       #bigContainer{
+         position:
+         overflow: hidden;
+       }
+   </style>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#welcomePic">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projectshr">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skillshr">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contacthr">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!--big ol' image-->
+    <div id="particles-js"></div>
+    <script>
+//particlesJS();
 
-<div class="row align-items-center justify-content-center bgImage" id="topImage">
-  <h1  class="text-center"><span id="topText"></span></h1>
-</div>
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 160,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#19e8df"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.8,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 3,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 25,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2.5,
+      "direction": "top",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": true,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
 
-<!--self pic and about section-->
-<div class="container-fluid welcome">
-  <div class="row">
-    <div class="col-sm" id="welcomePic">
-      <img class="mx-auto d-block rounded-circle img-fluid" src="images/profilepicbw3.png" alt="Awesome Pic of Myself">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm aboutSection">
-      <h1 class="text-center">Jason Fritsche</h1>
-      <h3 class="text-center">Web Developer <span class="text-muted"> | Awesome Person</span></h3>
-      <p class="text-center">I am a front-end developer with a passion for learning,
-        problem solving, and the oxford comma.<br/> I come equipped with excellent communication skills,
-     and a drive for success.<br/>I am an Air Force veteran turned locksmith who decided to learn a new skill.<br/>
-     Fun fact: I've lived in five countries!</p>
-    </div>
-  </div>
-</div>
-<hr id="projectshr">
-<!--projects-->
-<div class="container-fluid projects">
-  <div class='row'>
-    <div class="col-sm">
-      <h1 class="text-center">Projects</h1><br>
-      <p class="text-center">Check out some of my work below.
-      To view more feel free to check out my Github.</p>
-     </div>
-  </div>
-</div>
-<!--project cards-->
-<div class="container-fluid project-container">
-    <div class="row">
-    <div class="card-deck mx-auto">
-      <div class="card" style="max-width: 24rem;">
-        <img class="card-img-top" src="images/todo.PNG" alt="Card image cap">
-        <div class="card-block">
-          <h5 class="card-title">To Do List</h5>
-          <p class="card-text">The coveted to do list project. Check it out, it will blow your mind.</p>
-          <a href="https://jasonfritsche.github.io/TodoListJS/" target="_blank" class="btn btn-secondary">Check it out</a>
+</script>
+    <!-- navbar -->
+    <div id="bigContainer">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="img/tejas.png" width="30" height="30" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#projectshr">Projects</a>
+          <a class="nav-item nav-link" href="#contacthr">Contact</a>
         </div>
       </div>
-      <div class="card" style="max-width: 24rem;">
-        <img class="card-img-top" src="images/weatherapp.PNG" alt="Card image cap">
-        <div class="card-block">
-          <h5 class="card-title">Weather Forecast App</h5>
-          <p class="card-text">Weather forecast app. This was my first time using Moment.js, what a lifesaver.</p>
-          <a href="https://jasonfritsche.github.io/weatherapp/" target="_blank" class="btn btn-secondary">Check it out</a>
+    </nav>
+
+    <div class="text-right topdivs">
+      <h1 id="topText"> <span id="helloText1">Hello</span><span id="helloText2">,</span>
+        <span id="helloText3"> I'm Jason Fritsche.</span></h1>
+         <h1 id="topText2"><span id="helloText5">I'm a student</span>
+         <span id="helloText6">and a developer</span></h1>
+         <h1 id="topText2"> <span id="helloText7"> located
+      in Austin, Texas.</span></h1>
+    </div>
+    <!-- profile pic -->
+    <div >
+      <img id="profileImg" src="img/profilepic.jpg"
+       class="shadow-lg rounded-circle mx-auto d-block img-fluid topdivs" alt="profile pic">
+    </div>
+
+    <!-- three descriptors -->
+    <div class="container text-center mt-5">
+      <div class="row">
+        <div class="col-md">
+          <h2 id="danimation1"><span class="text-danger">Web Developer </span></h2>
+      </div>
+        <div class="col-md">
+          <h2 id="danimation2"><span class="text-success"> Awesome Person</span></h2>
+      </div>
+        <div class="col-md">
+          <h2 id="danimation3"><span class="text-primary">Veteran</span></h2>
         </div>
       </div>
     </div>
-  </div>
- <div class="row">
-    <div class="card-deck mx-auto">
-      <div class="card" style="max-width: 24rem;">
-        <img class="card-img-top" src="images/masterkey.PNG" alt="Card image cap">
-        <div class="card-block">
-          <h5 class="card-title">Master Key Assistant</h5>
-          <p class="card-text">This tool that allows locksmiths to
-          get the key cuts and pinning for a master key project.</p>
-          <a href="https://jasonfritsche.github.io/masterkeyv1/" target="_blank" class="btn btn-secondary">Check it out</a>
+    <!-- projects -->
+    <div class="topText topdivs text-center projects">
+      <h1>Projects</h1>
+      <h4>Check out a few of my personal projects. You can find more on my <a href="https://github.com/JasonFritsche" target="_blank"> Github </a>.</h4>
+    </div>
+    <hr id="projectshr">
+    <div class="container projects">
+      <!-- AQI project -->
+      <div class="row my-5">
+        <div class="col">
+          <h1>Local Pollution Report</h1>
+          <p>This project uses the <a href="https://www.airvisual.com/user/api" target="_blank" >Air Visual API </a> to deliver the current AQI
+          based on the user's IP address. This is my first project using React.js.
+          </p>
+
         </div>
-      </div>
-      <div class="card" style="max-width: 24rem;">
-        <img class="card-img-top" src="images/circles.PNG" alt="Card image cap">
-        <div class="card-block">
-          <h5 class="card-title">RGB Colors</h5>
-          <p class="card-text">This is my first project to use Vue.js. Dynamically
-          change the RGB values and size of the circle.</p>
-          <a href="https://jasonfritsche.github.io/dynamicCircleRGB/" target="_blank" class="btn btn-secondary">Check it out</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<hr id="skillshr">
-<!--obligatory(?)skillz section-->
-<div class="container-fluid skills">
-  <div class="row">
-    <div class="col text-center">
-      <h1>Tools I Use</h1>
-    </div>
-  </div>
-
-</div>
-<div class="container-fluid">
-
-  <div class="row skillz">
-
-    <div class="col-3">
-      <span data-toggle="tooltip" data-placement="right" title="HTML">
-      <img class="img-fluid" src="images/html.png"></span>
-    </div>
-    <div class="col-3">
-      <span data-toggle="tooltip" data-placement="right" title="CSS">
-      <img class="img-fluid" src="images/css.png"></span>
-    </div>
-    <div class="col-3">
-      <span data-toggle="tooltip" data-placement="right" title="JavaScript">
-      <img class="img-fluid" src="images/js.png"></span>
-    </div>
-    <div class="col-3">
-      <span data-toggle="tooltip" data-placement="right" title="Bootstrap">
-      <img class="img-fluid" src="images/bootstrap.png"></span>
-    </div>
-  </div>
-    <div class="row skillz">
-      <div class="col-3">
-        <span data-toggle="tooltip" data-placement="right" title="jQuery">
-      <img class="img-fluid" src="images/jquery.png"></span>
-    </div>
-    <div class="col-3">
-      <span data-toggle="tooltip" data-placement="right" title="Sass">
-      <img class="img-fluid" src="images/sass.png"></span>
-    </div>
-    <div class="col-3">
-      <span data-toggle="tooltip" data-placement="right" title="Gimp">
-      <img class="img-fluid" src="images/gimp.png"></span>
-    </div>
-    <div class="col-3">
-      <span data-toggle="tooltip" data-placement="right" title="Vue.js">
-      <img class="img-fluid" src="images/Vue2.png"></span>
-    </div>
-  </div>
-
-  </div>
-</div>
-<hr id="contacthr">
-<!--contact-->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col text-center">
-      <h1 id="contactText">Contact/Info</h1>
-    </div>
-  </div>
-  <div class="row contactIcons">
-    <div class="col-3">
-      <a href="https://github.com/JasonFritsche" target="_blank">
-        <span data-toggle="tooltip" data-placement="right" title="Github">
-          <img class="img-fluid" src="images/github.png" alt="Github"></span></a>
-    </div>
-    <div class="col-3">
-      <a href="https://www.linkedin.com/in/jason-fritsche-b260a255/" target="_blank">
-        <span data-toggle="tooltip" data-placement="right" title="LinkedIn">
-          <img class="img-fluid" src="images/linkedin.png" alt="Github"></span></a>
-    </div>
-    <div class="col-3">
-      <a href="mailto:fritsche.jason@gmail.com" target="_blank">
-        <span data-toggle="tooltip" data-placement="right" title="fritsche.jason@gmail.com">
-          <img class="img-fluid" src="images/gmail.png" alt="Gmail"></span></a>
-    </div>
-    <div class="col-3">
-      <a href="https://explorewebarchitecture.wordpress.com" target="_blank">
-        <span data-toggle="tooltip" data-placement="right" title="My Blog">
-          <img class="img-fluid" src="images/wordpress.png" alt="Blog"></span></a>
-    </div>
-  </div>
-</div>
-
-<footer>
-<!--Footer-->
-<footer>
-    <div class="container-fluid bg-dark ">
-        <div class="row">
-          <div class=" col py-3 text-center">
-              <p>© 2018 Jason Fritsche</p>
+        <div class="col">
+            <img class="shadow-lg card-img-top" src="img/localAQIChecker.png" alt="Card image cap">
+              <a href="https://jasonfritsche.github.io/LocalAQIChecker/" target="_blank"
+              class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+            </div>
           </div>
-</footer>
+          <hr>
+      <!-- TO-DO List -->
+      <div class="row my-5">
+        <div class="col">
+            <img class="shadow-lg card-img-top" src="img/todo.png" alt="Card image cap">
+              <a href="https://jasonfritsche.github.io/TodoListJS/" target="_blank"
+               class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+          </div>
 
-    <!-- Optional JavaScript -->
+        <div class="col">
+          <h1>To-do List</h1>
+          <p> Get organized with this awesome to-do list. This responsive site
+            was built using Bootstrap.
+          </p>
+          </div>
+        </div>
+        <hr>
+      <!-- weather app  -->
+      <div class="row my-5">
+        <div class="col">
+          <h1>Weather Forecast App</h1>
+          <p>This project uses the <a href="https://openweathermap.org/api" target="_blank"> Open Weather Map API </a>
+             to deliver the forecast for any city in the world. Select the number of days up to seven days out.
+          </p>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        </div>
+        <div class="col">
+            <img class="card-img-top" src="img/weatherapp.png" alt="Card image cap">
+              <a href="https://jasonfritsche.github.io/weatherapp/" target="_blank"
+              class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+        </div>
+      </div>
+      <hr>
+        <!-- Master Key App  -->
+        <div class="row my-5">
+          <div class="col">
+              <img class="card-img-top" src="img/masterkey.png" alt="Card image cap">
+                <a href="https://jasonfritsche.github.io/masterkeyv1/" target="_blank"
+                class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+            </div>
+          <div class="col">
+            <h1>Master Key Tool</h1>
+            <p> I was inspired to make this project by one of my locksmith friends.
+              I used to be a locksmith, and I know that the less time you have to spend
+              doing the math to design a master key system, the better. I plan on adding
+              more features to this project in the future after I spend more time learning
+              SPA frameworks.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <!-- RGB Circles  -->
+        <div class="row my-5">
+          <div class="col">
+            <h1>RGB Value Changer</h1>
+            <p>Dynamically change the RGB values and size of the circle in this
+              project. This was a lot of fun to make. This project gave me just a taste of
+              what Vue.js has to offer.
+            </p>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="myjs.js"></script>
+          </div>
+          <div class="col">
+              <img class="card-img-top" src="img/circles.png" alt="Card image cap">
+                <a href="https://jasonfritsche.github.io/dynamicCircleRGB/" target="_blank"
+                 class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+          </div>
+        </div>
+        <hr>
+        <!-- blog  -->
+        <div class="row my-5">
+          <div class="col ">
+              <img class="card-img-top img-fluid" src="img/wordpress.png" style="width:35vh;margin-left:3vh" alt="Card image cap">
+                <a href="https://explorewebarchitecture.wordpress.com/" target="_blank"
+                class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+            </div>
+          <div class="col">
+            <h1>Web Architecture Blog</h1>
+            <p>This was a class project for my Web Architecture course. The blog covers
+            topics such as using the Linux CLI, setting up Sendmail, installing and configuring iptables,
+            FTP, Apache, setting up MySQL in the CLI, OpenSSH, and how to use PuTTY.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr id="contacthr">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col">
+            <h1 class="text-center">Contact/GitHub</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a href="mailto:fritsche.jason@gmail.com" target="_blank">
+              <span data-toggle="tooltip" data-placement="right" title="fritsche.jason@gmail.com">
+                <img src="img/gmail.png" alt="Email: fritsche.jason@gmail.com">
+              </span>
+            </a>
+          </div>
+          <div class="col">
+          <a href="https://www.linkedin.com/in/jason-fritsche-b260a255/" target="_blank">
+            <span data-toggle="tooltip" data-placement="right" title="LinkedIn">
+              <img src="img/linkedin.png" alt="linkedin:https://www.linkedin.com/in/jason-fritsche/ ">
+            </span>
+          </a>
+          </div>
+          <div class="col">
+            <a href="https://github.com/JasonFritsche" target="_blank">
+              <span data-toggle="tooltip" data-placement="right" title="Github">
+                <img src="img/github.png" alt="GitHub:https://github.com/JasonFritsche ">
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
