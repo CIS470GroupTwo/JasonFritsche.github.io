@@ -1,0 +1,162 @@
+.topdivs{
+  opacity: .85 !important;
+  margin-top: 5em;
+}
+
+#topText{
+  font-family: 'Audiowide', cursive;
+  margin: 1em 5em .3em 4em;
+}
+#topText2{
+  font-family: 'Audiowide', cursive;
+  margin: .1em 7em .1em 4em;
+}
+
+hr{
+  color: #1ed8ed;
+  opacity: .9 !important;
+  width: 80%;
+}
+
+.bg-light{
+  opacity: .80;
+}
+
+#danimation1{
+  position: relative;
+  animation-name: da1;
+  animation-duration: 4s;
+  animation-fill-mode: backwards;
+  animation-delay: 4s;
+}
+
+@keyframes da1{
+  0% {left: 1500px;}
+  100% {left: 0px;}
+}
+
+#danimation2{
+  position: relative;
+  animation-name: da2;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-delay: 4.4s;
+}
+
+@keyframes da2{
+  0% {left: 1400px;}
+  100% {left: 0px;}
+}
+
+#danimation3{
+  position: relative;
+  animation-name: da2;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-delay: 4.7s;
+}
+
+@keyframes da3{
+  0% {left: 1500px;}
+  100% {left: 0px;}
+}
+
+#helloText1,#helloText2, #helloText3, #helloText4, #helloText5,
+#helloText6, #helloText7, #helloText8{
+  opacity:0;
+}
+
+#helloText1{
+  animation-name: ht1;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes ht1 {
+  0% {opacity: 0;}
+  100% {opacity: .8;}
+}
+
+#helloText2{
+  animation-name: ht2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes ht2 {
+  0% {opacity: 0;}
+  100% {opacity: .8;}
+}
+
+#helloText3{
+  animation-name: ht2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+@keyframes ht3 {
+  0% {opacity: 0;}
+  100% {opacity: .8;}
+}
+
+#helloText4{
+  animation-name: ht4;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+@keyframes ht4 {
+  0% {opacity: 0;}
+  100% {opacity: .8;}
+}
+
+#helloText5{
+  animation-name: ht5;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+@keyframes ht5{
+  0% {opacity: 0;}
+  100% {opacity: .8;}
+}
+
+#helloText6{
+  animation-name: ht6;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 6.5s;
+}
+
+@keyframes ht6{
+  0% {opacity: 0;}
+  100% {opacity: .8;}
+}
+
+#helloText7{
+  animation-name: ht7;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 7.5s;
+}
+
+@keyframes ht7{
+  0% {opacity: 0;}
+  100% {opacity: .8;}
+}
+
+
+#profileImg:hover{
+  cursor: default;
+    transform: rotate(360deg);
+    transition: all .8s ease-in-out 0s;
+  }
+
+.projects{
+  font-family: 'Share', cursive;
+}
