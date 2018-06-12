@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link id="pagestyle" rel="stylesheet" type="text/css" href="app.css">
     <link href="https://fonts.googleapis.com/css?family=Share|Audiowide" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <title>Jason's Profile</title>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>Profile.JSON();</title>
     <style type="text/css">
        body, html {height: 100%}
 
@@ -167,13 +167,13 @@ particlesJS("particles-js", {
       </div>
     </nav>
 
-    <div class="text-center topdivs">
-      <h1 id="topText"> <span id="helloText1">Hello</span><span id="helloText2">,</span>
-        <span id="helloText3"> I'm Jason Fritsche.</span></h1>
-         <h1 id="topText2"><span id="helloText5">I'm a student</span>
-         <span id="helloText6">and a developer</span></h1>
-         <h1 id="topText2"> <span id="helloText7"> located
-      in Austin, Texas.</span></h1>
+    <div class="text-right topdivs">
+      <h2 id="topText"> <span id="helloText1">Hello</span><span id="helloText2">,</span>
+        <span id="helloText3"> I'm Jason Fritsche.</span></h2>
+         <h2 id="topText2"><span id="helloText5">I'm a student</span>
+         <span id="helloText6">and a developer</span></h2>
+         <h2 id="topText2"> <span id="helloText7"> located
+      in Austin, Texas.</span></h2>
     </div>
     <!-- profile pic -->
     <div >
@@ -202,26 +202,25 @@ particlesJS("particles-js", {
     </div>
     <hr id="projectshr">
     <div class="container projects">
-      <!-- AQI project -->
-      <div class="row my-5">
-        <div class="col">
-          <h1>Local Pollution Report</h1>
-          <p>This project uses the <a href="https://www.airvisual.com/user/api" target="_blank" >Air Visual API </a> to deliver the current AQI
-          based on the user's IP address. This is my first project using React.js.
-          </p>
+          <div class="row my-5">
+            <div class="col">
+              <h1>Local Pollution Report</h1>
+              <p>This project uses the <a href="https://www.airvisual.com/user/api" target="_blank" >Air Visual API </a> to deliver the current AQI
+              based on the user's IP address. This is my first project using React.js.
+              </p>
 
-        </div>
-        <div class="col">
-            <img class="shadow-lg card-img-top" src="img/localAQIChecker.PNG" alt="Card image cap">
-              <a href="https://jasonfritsche.github.io/LocalAQIChecker/" target="_blank"
-              class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+            </div>
+            <div class="col">
+                <img class="card-img-top projectimg" src="img/LocalAQIChecker.png" alt="Card image cap">
+                  <a href="https://jasonfritsche.github.io/LocalAQIChecker/" target="_blank"
+                  class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
             </div>
           </div>
           <hr>
       <!-- TO-DO List -->
       <div class="row my-5">
         <div class="col">
-            <img class="shadow-lg card-img-top" src="img/todo.PNG" alt="Card image cap">
+            <img class="card-img-top projectimg" src="img/todo.png" alt="Card image cap">
               <a href="https://jasonfritsche.github.io/TodoListJS/" target="_blank"
                class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
           </div>
@@ -244,7 +243,7 @@ particlesJS("particles-js", {
 
         </div>
         <div class="col">
-            <img class="card-img-top" src="img/weatherapp.PNG" alt="Card image cap">
+            <img class="card-img-top projectimg" src="img/weatherapp.png" alt="Card image cap">
               <a href="https://jasonfritsche.github.io/weatherapp/" target="_blank"
               class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
         </div>
@@ -253,7 +252,7 @@ particlesJS("particles-js", {
         <!-- Master Key App  -->
         <div class="row my-5">
           <div class="col">
-              <img class="card-img-top" src="img/masterkey.PNG" alt="Card image cap">
+              <img class="card-img-top projectimg" src="img/masterkey.png" alt="Card image cap">
                 <a href="https://jasonfritsche.github.io/masterkeyv1/" target="_blank"
                 class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
             </div>
@@ -279,7 +278,7 @@ particlesJS("particles-js", {
 
           </div>
           <div class="col">
-              <img class="card-img-top" src="img/circles.PNG" alt="Card image cap">
+              <img class="card-img-top projectimg" src="img/circles.png" alt="Card image cap">
                 <a href="https://jasonfritsche.github.io/dynamicCircleRGB/" target="_blank"
                  class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
           </div>
@@ -299,8 +298,27 @@ particlesJS("particles-js", {
             FTP, Apache, setting up MySQL in the CLI, OpenSSH, and how to use PuTTY.</p>
           </div>
         </div>
-      </div>
 
+
+      <!-- chuck norris jokes -->
+      <div class="row my-5">
+        <div class="col">
+          <h1>Chuck Norris Jokes</h1>
+          <p>Built with create-React-App, this page uses the Chuck Norris API on GitHub.
+            Click the next button, and you'll get a random Chuck Norris joke.
+            Some of the jokes are NSFW.
+          </p>
+
+        </div>
+        <div class="col">
+            <img class="card-img-top projectimg" src="img/chucksite.png" alt="Card image cap">
+              <a href="https://jasonfritsche.github.io/chucknorrisjokes/" target="_blank"
+               class="btn btn-primary btn-lg btn-block mt-3">Chuck it out</a>
+        </div>
+      </div>
+  </div>
+
+<!-- contact and github info -->
       <hr id="contacthr">
       <div class="container">
         <div class="row my-5">
@@ -312,26 +330,32 @@ particlesJS("particles-js", {
           <div class="col">
             <a href="mailto:fritsche.jason@gmail.com" target="_blank">
               <span data-toggle="tooltip" data-placement="right" title="fritsche.jason@gmail.com">
-                <img src="img/gmail.png" alt="Email: fritsche.jason@gmail.com">
+                <img class="img-fluid" src="img/gmail.png" alt="Email: fritsche.jason@gmail.com">
               </span>
             </a>
           </div>
           <div class="col">
           <a href="https://www.linkedin.com/in/jason-fritsche-b260a255/" target="_blank">
             <span data-toggle="tooltip" data-placement="right" title="LinkedIn">
-              <img src="img/linkedin.png" alt="linkedin:https://www.linkedin.com/in/jason-fritsche/ ">
+              <img class="img-fluid" src="img/linkedin.png" alt="linkedin:https://www.linkedin.com/in/jason-fritsche/ ">
             </span>
           </a>
           </div>
           <div class="col">
             <a href="https://github.com/JasonFritsche" target="_blank">
               <span data-toggle="tooltip" data-placement="right" title="Github">
-                <img src="img/github.png" alt="GitHub:https://github.com/JasonFritsche ">
+                <img class="img-fluid" src="img/github.png" alt="GitHub:https://github.com/JasonFritsche ">
               </span>
             </a>
           </div>
         </div>
       </div>
+
+<footer>
+  <div class="footerdiv">
+    <p class="text-center">Please feel free to contact me</p>
+  </div>
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
