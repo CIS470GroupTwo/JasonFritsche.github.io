@@ -22,48 +22,10 @@ hr{
   opacity: .80;
 }
 
-#danimation1{
-  position: relative;
-  animation-name: da1;
-  animation-duration: 4s;
-  animation-fill-mode: backwards;
-  animation-delay: 4s;
-}
-
-@keyframes da1{
-  0% {left: 1500px;}
-  100% {left: 0px;}
-}
-
-#danimation2{
-  position: relative;
-  animation-name: da2;
-  animation-duration: 3s;
-  animation-fill-mode: backwards;
-  animation-delay: 4.4s;
-}
-
-@keyframes da2{
-  0% {left: 1400px;}
-  100% {left: 0px;}
-}
-
-#danimation3{
-  position: relative;
-  animation-name: da2;
-  animation-duration: 3s;
-  animation-fill-mode: backwards;
-  animation-delay: 4.7s;
-}
-
-@keyframes da3{
-  0% {left: 1500px;}
-  100% {left: 0px;}
-}
-
 #helloText1,#helloText2, #helloText3, #helloText4, #helloText5,
 #helloText6, #helloText7, #helloText8{
   opacity:0;
+  font-size: .9em;
 }
 
 #helloText1{
@@ -153,8 +115,16 @@ hr{
 
 #profileImg:hover{
   cursor: default;
-    transform: rotate(360deg);
-    transition: all .8s ease-in-out 0s;
+    animation-name: pic-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+
+  @keyframes pic-animation{
+    0% {opacity: .8;}
+    50% {opacity: .1;}
+    100% {opacity: .8;}
   }
 
 .projects{
@@ -181,4 +151,8 @@ hr{
   opacity: .7;
   font-family: 'Share', cursive;
   font-size: 1.2em;
+}
+
+.p-text{
+  font-size: 1em;
 }

@@ -28,7 +28,7 @@
        }
 
        #bigContainer{
-         position:
+
          overflow: hidden;
        }
    </style>
@@ -41,14 +41,14 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 160,
+      "value": 40,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#19e8df"
+      "value": "#ccc"
     },
     "shape": {
       "type": "circle",
@@ -181,20 +181,6 @@ particlesJS("particles-js", {
        class="shadow-lg rounded-circle mx-auto d-block img-fluid topdivs" alt="profile pic">
     </div>
 
-    <!-- three descriptors -->
-    <div class="container text-center mt-5">
-      <div class="row">
-        <div class="col-md">
-          <h2 id="danimation1"><span class="text-danger">Web Developer </span></h2>
-      </div>
-        <div class="col-md">
-          <h2 id="danimation2"><span class="text-success"> Awesome Person</span></h2>
-      </div>
-        <div class="col-md">
-          <h2 id="danimation3"><span class="text-primary">Veteran</span></h2>
-        </div>
-      </div>
-    </div>
     <!-- projects -->
     <div class="topText topdivs text-center projects">
       <h1>Projects</h1>
@@ -204,31 +190,29 @@ particlesJS("particles-js", {
     <div class="container projects">
           <div class="row my-5">
             <div class="col">
-              <h1>Local Pollution Report</h1>
-              <p>This project uses the <a href="https://www.airvisual.com/user/api" target="_blank" >Air Visual API </a> to deliver the current AQI
-              based on the user's IP address. This is my first project using React.js.
+              <h1>To Do List</h1>
+              <p class="p-text">Create a list of items. The items are saved in the browser's local storage, so they will be there even when you exit the browser.
               </p>
 
             </div>
             <div class="col">
-                <img class="card-img-top projectimg" src="img/aqi.png" alt="Card image cap">
-                  <a href="https://jasonfritsche.github.io/LocalAQIChecker/" target="_blank"
-                  class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+                <img class="card-img-top projectimg" src="img/reacttodo.png" alt="Card image cap">
+                  <a href="https://jasonfritsche.github.io/todoreact/" target="_blank"
+                  class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
             </div>
           </div>
           <hr>
       <!-- TO-DO List -->
       <div class="row my-5">
         <div class="col">
-            <img class="card-img-top projectimg" src="img/todo.PNG" alt="Card image cap">
-              <a href="https://jasonfritsche.github.io/TodoListJS/" target="_blank"
-               class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+            <img class="card-img-top projectimg" src="img/NFLArrests.png" alt="Card image cap">
+              <a href="http://jasonfritsche.github.io/NFLStats/" target="_blank"
+               class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
           </div>
 
         <div class="col">
-          <h1>To-do List</h1>
-          <p> Get organized with this awesome to-do list. This responsive site
-            was built using Bootstrap.
+          <h1>NFL Crime Statistics</h1>
+          <p class="p-text">This page was made using the <a href="http://nflarrest.com/api/">NFL Arrest API</a>. Check out statistics such as "Top Ten Teams with Most Arrests", or "Top Crimes by Team". <br/><br/><em>Note: You will need to allow your page to view HTTP/load unsecure scripts in order to view the graphs. This is due to the API.</em>
           </p>
           </div>
         </div>
@@ -237,7 +221,7 @@ particlesJS("particles-js", {
       <div class="row my-5">
         <div class="col">
           <h1>Weather Forecast App</h1>
-          <p>This project uses the <a href="https://openweathermap.org/api" target="_blank"> Open Weather Map API </a>
+          <p class="p-text">This project uses the <a href="https://openweathermap.org/api" target="_blank"> Open Weather Map API </a>
              to deliver the forecast for any city in the world. Select the number of days up to seven days out.
           </p>
 
@@ -245,7 +229,7 @@ particlesJS("particles-js", {
         <div class="col">
             <img class="card-img-top projectimg" src="img/weatherapp.PNG" alt="Card image cap">
               <a href="https://jasonfritsche.github.io/weatherapp/" target="_blank"
-              class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+              class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
         </div>
       </div>
       <hr>
@@ -254,15 +238,13 @@ particlesJS("particles-js", {
           <div class="col">
               <img class="card-img-top projectimg" src="img/masterkey.PNG" alt="Card image cap">
                 <a href="https://jasonfritsche.github.io/masterkeyv1/" target="_blank"
-                class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+                class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
             </div>
           <div class="col">
             <h1>Master Key Tool</h1>
-            <p> I was inspired to make this project by one of my locksmith friends.
+            <p class="p-text"> I was inspired to make this project by one of my locksmith friends.
               I used to be a locksmith, and I know that the less time you have to spend
-              doing the math to design a master key system, the better. I plan on adding
-              more features to this project in the future after I spend more time learning
-              SPA frameworks.
+              doing the math to design a master key system, the better.
             </p>
           </div>
         </div>
@@ -271,7 +253,7 @@ particlesJS("particles-js", {
         <div class="row my-5">
           <div class="col">
             <h1>RGB Value Changer</h1>
-            <p>Dynamically change the RGB values and size of the circle in this
+            <p class="p-text">Dynamically change the RGB values and size of the circle in this
               project. This was a lot of fun to make. This project gave me just a taste of
               what Vue.js has to offer.
             </p>
@@ -280,7 +262,7 @@ particlesJS("particles-js", {
           <div class="col">
               <img class="card-img-top projectimg" src="img/circles.PNG" alt="Card image cap">
                 <a href="https://jasonfritsche.github.io/dynamicCircleRGB/" target="_blank"
-                 class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+                 class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
           </div>
         </div>
         <hr>
@@ -289,11 +271,11 @@ particlesJS("particles-js", {
           <div class="col ">
               <img class="card-img-top img-fluid" src="img/wordpress.png" style="width:35vh;margin-left:3vh" alt="Card image cap">
                 <a href="https://explorewebarchitecture.wordpress.com/" target="_blank"
-                class="btn btn-primary btn-lg btn-block mt-3">Check it out</a>
+                class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
             </div>
           <div class="col">
             <h1>Web Architecture Blog</h1>
-            <p>This was a class project for my Web Architecture course. The blog covers
+            <p class="p-text">This was a class project for my Web Architecture course. The blog covers
             topics such as using the Linux CLI, setting up Sendmail, installing and configuring iptables,
             FTP, Apache, setting up MySQL in the CLI, OpenSSH, and how to use PuTTY.</p>
           </div>
@@ -304,7 +286,7 @@ particlesJS("particles-js", {
       <div class="row my-5">
         <div class="col">
           <h1>Chuck Norris Jokes</h1>
-          <p>Built with create-React-App, this page uses the Chuck Norris API on GitHub.
+          <p class="p-text">Built with React.js, this page uses the Chuck Norris API on GitHub.
             Click the next button, and you'll get a random Chuck Norris joke.
             Some of the jokes are NSFW.
           </p>
@@ -313,7 +295,7 @@ particlesJS("particles-js", {
         <div class="col">
             <img class="card-img-top projectimg" src="img/chucksite.png" alt="Card image cap">
               <a href="https://jasonfritsche.github.io/chucknorrisjokes/" target="_blank"
-               class="btn btn-primary btn-lg btn-block mt-3">Chuck it out</a>
+               class="btn btn-dark btn-lg btn-block mt-3">Chuck it out</a>
         </div>
       </div>
   </div>
@@ -350,12 +332,12 @@ particlesJS("particles-js", {
           </div>
         </div>
       </div>
-
-<footer>
-  <div class="footerdiv">
-    <p class="text-center">Please feel free to contact me</p>
-  </div>
-</footer>
+      <div>
+    <footer>
+      <div class="footerdiv">
+        <p class="text-center">Please feel free to contact me</p>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
