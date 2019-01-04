@@ -5,11 +5,15 @@
 
 #topText{
   font-family: 'Audiowide', cursive;
-  margin: 1em 5em .3em 4em;
+  margin: 1em 2em .3em 1em;
 }
 #topText2{
   font-family: 'Audiowide', cursive;
-  margin: .1em 7em .1em 4em;
+  margin: .3em 1em .1em 2em;
+}
+#topText3{
+  font-family: 'Audiowide', cursive;
+  margin: .3em 1em .1em 3em;
 }
 
 hr{
@@ -153,6 +157,6 @@ hr{
   font-size: 1.2em;
 }
 
-.p-text{
-  font-size: 1em;
-}
+.p-text{font-size: 1.2em;}
+h1{font-size: 1.7em;}
+h2{font-size: 1.5em;}
