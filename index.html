@@ -151,44 +151,60 @@ particlesJS("particles-js", {
 
 </script>
     <!-- navbar -->
-    <div id="bigContainer">
+<div id="bigContainer">
 
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <img src="img/tejas.png" width="30" height="30" alt="">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#projectshr">Projects</a>
-          <a class="nav-item nav-link" href="#contacthr">Contact</a>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="img/tejas.png" width="30" height="30" alt="">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#projectshr">Projects</a>
+        <a class="nav-item nav-link" href="#contacthr">Contact</a>
       </div>
-    </nav>
+    </div>
+  </nav>
+<!-- top text -->
+  <div class="topdivs">
+    <h2 id="topText"> <span id="helloText1">Hello</span><span id="helloText2">,</span>
+      <span id="helloText3"> I'm Jason Fritsche.</span></h2>
+        <h2 id="topText2"><span id="helloText5">I'm a student</span>
+        <span id="helloText6">and a developer</span></h2>
+        <h2 id="topText3"> <span id="helloText7"> located
+    in Austin, Texas.</span></h2>
+  </div>
+  <!-- profile pic -->
+  <div >
+    <img id="profileImg" src="img/profilepic.jpg"
+      class="shadow-lg rounded-circle mx-auto d-block img-fluid topdivs" alt="profile pic">
+  </div>
 
-    <div class="topdivs">
-      <h2 id="topText"> <span id="helloText1">Hello</span><span id="helloText2">,</span>
-        <span id="helloText3"> I'm Jason Fritsche.</span></h2>
-         <h2 id="topText2"><span id="helloText5">I'm a student</span>
-         <span id="helloText6">and a developer</span></h2>
-         <h2 id="topText3"> <span id="helloText7"> located
-      in Austin, Texas.</span></h2>
-    </div>
-    <!-- profile pic -->
-    <div >
-      <img id="profileImg" src="img/profilepic.jpg"
-       class="shadow-lg rounded-circle mx-auto d-block img-fluid topdivs" alt="profile pic">
-    </div>
+  <!-- projects -->
+  <div class="topText topdivs text-center projects">
+    <h1>Projects</h1>
+    <hr style="width:20%">
+    <h2>Check out a few of my personal projects. You can find more on my <a href="https://github.com/JasonFritsche" target="_blank"> Github </a>.</h2>
+  </div>
 
-    <!-- projects -->
-    <div class="topText topdivs text-center projects">
-      <h1>Projects</h1>
-      <hr style="width:20%">
-      <h2>Check out a few of my personal projects. You can find more on my <a href="https://github.com/JasonFritsche" target="_blank"> Github </a>.</h2>
+  <hr id="projectshr">
+
+<div class="container projects">
+
+       <!-- blog  -->
+  <div class="row my-5">
+    <div class="col ">
+        <img class="card-img-top img-fluid" src="img/breweryfinder.png"  alt="Card image cap">
+          <a href="https://jasonfritsche.github.io/BreweryFinder/" target="_blank"
+          class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
+      </div>
+    <div class="col">
+      <h1>Brewery Finder</h1>
+      <p class="p-text">This is an open source project that I started in early 2019 with the hope of providing up and coming developers a project that they would feel comfortable working on. This project has given multiple developers from around the world the chance to make their first PR, and has allowed me to get more familiar with React and Git.</p>
     </div>
-    <hr id="projectshr">
-    <div class="container projects">
+  </div>
+  <hr>
+<!-- Todo list -->
           <div class="row my-5">
             <div class="col">
               <h1>To Do List</h1>
@@ -203,14 +219,13 @@ particlesJS("particles-js", {
             </div>
           </div>
           <hr>
-      <!-- TO-DO List -->
+      <!-- NFL Crime Stats -->
       <div class="row my-5">
         <div class="col">
             <img class="card-img-top projectimg" src="img/NFLArrests.png" alt="Card image cap">
               <a href="http://jasonfritsche.github.io/NFLStats/" target="_blank"
                class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
           </div>
-
         <div class="col">
           <h1>NFL Crime Statistics</h1>
           <p class="p-text">This page was made using the <a href="http://nflarrest.com/api/">NFL Arrest API</a>. Check out statistics such as "Top Ten Teams with Most Arrests", or "Top Crimes by Team". <br/><br/><em>Note: You will need to allow your page to view HTTP/load unsecure scripts in order to view the graphs. This is due to the API.</em>
@@ -267,22 +282,20 @@ particlesJS("particles-js", {
           </div>
         </div>
         <hr>
-        <!-- blog  -->
-        <div class="row my-5">
-          <div class="col ">
-              <img class="card-img-top img-fluid" src="img/wordpress.png" style="width:35vh;margin-left:3vh" alt="Card image cap">
-                <a href="https://explorewebarchitecture.wordpress.com/" target="_blank"
+       <!-- Master Key App  -->
+       <div class="row my-5">
+          <div class="col">
+              <img class="card-img-top projectimg" src="img/patients.png" alt="Card image cap">
+                <a href="https://jasonfritsche.github.io/AngularPatients/" target="_blank"
                 class="btn btn-dark btn-lg btn-block mt-3">Check it out</a>
             </div>
           <div class="col">
-            <h1>Web Architecture Blog</h1>
-            <p class="p-text">This was a class project for my Web Architecture course. The blog covers
-            topics such as using the Linux CLI, setting up Sendmail, installing and configuring iptables,
-            FTP, Apache, setting up MySQL in the CLI, OpenSSH, and how to use PuTTY.</p>
+            <h1>Patient Tracker (AngularJS)</h1>
+            <p class="p-text"> This was my first and only experience using AngularJS(Angular 1). This was a take home challenge for a job that I was interviewing for in early 2019.
+            </p>
           </div>
         </div>
         <hr>
-
       <!-- chuck norris jokes -->
       <div class="row my-5">
         <div class="col">
